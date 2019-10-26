@@ -69,7 +69,7 @@ class GeneticAlgorithm:
         return new_population
 
     def main(self, population_qty, qty_variables_per_individual, max_iterations=1000,
-             criterion_function='min', eps=1e-5, mutation_probability=0.5):
+             criterion_function='min', mutation_probability=0.5):
         """main function"""
         population = self._create_population(qty_variables_per_individual, population_qty)
         best_fitness_function_value, best_solution = self._get_best_individual(population, criterion_function)
